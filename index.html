@@ -1,163 +1,405 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Mentorship-match-up by thingtwin1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Mentorship-match-up</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/thingtwin1/Mentorship-Match-Up" class="btn">View on GitHub</a>
-      <a href="https://github.com/thingtwin1/Mentorship-Match-Up/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/thingtwin1/Mentorship-Match-Up/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
 
-    <section class="main-content">
-      <p>&lt;!DOCTYPE html&gt;</p>
+<html>
+<head>
+	<link rel = "stylesheet" type="text/css" href = "Mentorship Match-Up.css">
+</head>
 
-<p>
-</p>
+<title>Login Mentorship Match-Up</title>
+<body>
+<style>
+#Login Page
+#J.J. Page
+#C.J. Page
+#Mentee/Mentor Page
+#Mentee Sign-Up Page
+#Mentor Sign-Up Page
+#PeopleProfile Page
+body {
+	
+	font-family: "Times New Roman";
+	font-size: 30px;
+	color: green;
+	background-color: #94C160;	
+	height:100%;
+	width: 100%;
+	
+	}
+	
+	#wrapper {
+	height: auto;
+	width: 100%;
+	min-height:100%;
+	position:absolute;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.white {
+	margin: 5px;
+	margin-right: 15px;
+}
+	
+h1 {
+	font-weight: bold;
+	color: white;		font-size: 50px;
+}
+
+h2 {
+	font-size: 35px;
+	line-height: 100%;
+	margin-bottom: 0.5em;
+}
+	
+h3 {
+	font-size: 35 px;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+h4 {
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+
+#TextBox {
+    width: 250px; 
+    height:25px;
+    font-size:14pt;
+}
+
+#login {
+	float: right;
+	margin-right: 10px;
+}
+
+#form {
+float: left
+}
+
+#info {
+ 	font-size: 18pt;
+	
+}
+
+
+/***** On all pages *****/
+#header {
+    background-color:#C4E79A;
+    color:white;
+    text-align:center;
+    padding:5px;
+    position: relative;
+    width: 100%;
+    right: 27px;
+}
+
+#footer {
+    background-color:#AA7239;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+    font-size: 15px;  
+    bottom: 0;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    right: 17px;
+}
+
+
+/******* On all profile pages ********/
+#nav {
+	width: 98%;
+	text-align: right;
+	font-size: 25px;
+}
+
+#back {
+	text-decoration: underline;
+	color: #551A8B;
+	float: left;
+}
+
+#education {
+    line-height:30px;
+    background-color:#6DA398;
+    height:250px;
+    width:210px;
+    float: left;
+    padding:5px; 
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 500px;
+}
+
+#friends {
+	line-height:30px;
+    background-color:#6DA398;
+    height:auto;
+    min-height: 300px;
+    position: relative;
+    width:25%;
+    float:right;
+    padding:5px; 
+    text-align: center;
+    right: 17px;
+    display: inline-block;
+    z-index:8888;
+}
+
+#section {
+	display:inline-block;
+    width:45%;
+    position :relative;
+    /*float:left;*/
+    padding:10px; 
+    color: white;
     
+}
 
 
-<p></p>Login Mentorship Match-Up
+/******** On mentee page ******/
+#aside {
+	
+    line-height:30px;
+    background-color:#6DA398;
+    height:250px;
+    width:210px;
+    float:left;
+    padding:5px; 
+    text-align: center;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 0px 0px 0px #7887e6;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #7887e6;
+	box-shadow:inset 0px 0px 0px 0px #7887e6;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8288fa), color-stop(1, #421bc2));
+	background:-moz-linear-gradient(top, #8288fa 5%, #421bc2 100%);
+	background:-webkit-linear-gradient(top, #8288fa 5%, #421bc2 100%);
+	background:-o-linear-gradient(top, #8288fa 5%, #421bc2 100%);
+	background:-ms-linear-gradient(top, #8288fa 5%, #421bc2 100%);
+	background:linear-gradient(to bottom, #8288fa 5%, #421bc2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8288fa', endColorstr='#421bc2',GradientType=0);
+	background-color:#8288fa;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #3b27d6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	font-weight:bold;
+	padding:20px 34px;
+	text-decoration:none;
+	text-shadow:0px 2px 0px #02030f;
+	position:relative;
+	right: 17px;
+	
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #421bc2), color-stop(1, #8288fa));
+	background:-moz-linear-gradient(top, #421bc2 5%, #8288fa 100%);
+	background:-webkit-linear-gradient(top, #421bc2 5%, #8288fa 100%);
+	background:-o-linear-gradient(top, #421bc2 5%, #8288fa 100%);
+	background:-ms-linear-gradient(top, #421bc2 5%, #8288fa 100%);
+	background:linear-gradient(to bottom, #421bc2 5%, #8288fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#421bc2', endColorstr='#8288fa',GradientType=0);
+	background-color:#421bc2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 
-<div id="Login Page">
+
+#choices {
+	float: right;
+}
+
+
+
+#choicesbuttons {
+width:100%;
+text-align: center; 
+margin:0 auto;
+}    
+
+@media (max-width:835px) {
+body{
+background:#FF3300;
+}
+}  
+
+@media (max-width:479px) {
+body{
+background:#FF3300;
+}
+} 
+
+
+#mentors  {
+	float: left;
+	width: 200px;
+	height: 500px;
+}
+
+
+#mentees  {
+	float: right;
+	width: 200px;
+	height: 500px;
+}
+
+#underline {
+	text-decoration: underline;
+}
+
+#groupaccept {
+	position: block;
+	position: absolute;
+	bottom: 150px;
+	width: 30%;
+	left: 280px;
+	text-align: center; 
+}
+</style> 
+<div data-role="page" id="Login Page">
 
 <div id="wrapper">
 
 <div id="header">
-<h1>
-<a id="mentorship-match-up" class="anchor" href="#mentorship-match-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mentorship Match-Up</h1>
+<h1>Mentorship Match-Up</h1>
 </div>
 
-<h4>
-<a id="connect-to-professionals-around-the-world" class="anchor" href="#connect-to-professionals-around-the-world" aria-hidden="true"><span class="octicon octicon-link"></span></a>CONNECT TO PROFESSIONALS AROUND THE WORLD</h4>
+<h4>CONNECT TO PROFESSIONALS AROUND THE WORLD</h4>
+<hr class="white">
 
-<hr>
 
 <div id="login">
 <h2>
-<a id="username" class="anchor" href="#username" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-Username:</h2>
+Username:</h2><br>
+
+<input id="TextBox" type="text" name="Username" input type="text" style="background-color: #C4E79A" />
 <br>
 
+<h2>Password:</h2><br>
 
-<br>
-
-<h2>
-<a id="password" class="anchor" href="#password" aria-hidden="true"><span class="octicon octicon-link"></span></a>Password:</h2>
-<br>
-
-
+<input id="TextBox" type="text" name="Password" input type="text" style="background-color: #C4E79A" />
 
 <br><br>
 
-
-
-
-
-
- 
-</div>
+<form method="link" action="#J.J. Page">
+<input type="submit" value="Login">
+</form>
+<form method="link" action="#Mentee/Mentor Page">
+<input type="submit" VALUE="Sign Up">
+ </form>
+</div><!--login-->
 
 <div id="info">
 
 <ul>
 <li>Make a personal profile to explore interest <br>
 or create a group to match mentors with mentees <br>
-within the group!</li>
-<br><br>
-<li>Find the right mentor match for you!</li>
-<br><br>
-<li>Communicate with others!</li>
-<br><br>
+within the group!</li><br><br>
+<li>Find the right mentor match for you!</li><br><br>
+<li>Communicate with others!</li><br><br>
 <li>Enhance communication!</li>
 </ul>
 
 </div>
 
-
-
+<!--Footer-->
 <div id="footer">
 2015 @ Mentorship Match-Up <br>
 Chicago, IL
 </div>
 
-<p></p>
-</div>&lt;!--wrapper--&gt;
-</div> &lt;!--page tag --&gt;
 
+</div><!--wrapper-->
+</div> <!--page tag -->
 
+<!--  				END OF PAGE 				-->
 
-<div id="J.J. Page">
+<div data-role="page" id="J.J. Page">
 <div id="wrapper">
 
 <div id="header">
-<h1>
-<a id="mentorship-match-up-1" class="anchor" href="#mentorship-match-up-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mentorship Match-Up</h1>
+<h1>Mentorship Match-Up</h1>
 </div>
 
-
+<script>
+function goBack() {
+	window.history.back();
+	}
+</script>
 
 <div id="nav">
 
-<hr size="1px" color="black">
+<hr 
+size=1px
+color="black">
 
 <div id="back">
- Back 
+<a onClick="goBack();"> Back </a>
+</div><!--back-->
+
+
+<a href="#Login Page">Log Out</a>
+<hr 
+size=1px
+color="black">
+
 </div>
 
-
-<a href="Login%20Page.html">Log Out</a>
-<hr size="1px" color="black">
-
-</div>
 
 <div id="aside">
-<img src="http://www.startupdaily.net/wp-content/uploads/2011/08/business-person-men-male_3213563.jpg" width="200" height="200px" border="5px&lt;br">
+<img src="http://www.startupdaily.net/wp-content/uploads/2011/08/business-person-men-male_3213563.jpg" 
+width=200 px
+height=200px
+border=5px<br>
 Mentee
 </div>
 
-
-
+<!-- Middle section (main body) -->
 <div id="section">
 
-<h1>
-<a id="jimmy-johnson" class="anchor" href="#jimmy-johnson" aria-hidden="true"><span class="octicon octicon-link"></span></a>Jimmy Johnson</h1>
+<h1>Jimmy Johnson</h1>
 <hr>
 
 Fields interested in: <br>
 
-
+<textarea rows="4" cols="50" readonly>
 Computer science
 Baking
 Law enforcement
-
+</textarea>
 <br>
 
 Goals:<br>
 
-
+<textarea rows="4" cols="50" readonly>
 Make my own website
 Create my own company
 Become a manager
-
+</textarea>
 </div>
 
-
-
+<!--List of mentors-->
 <div id="friends">
-<h2>
-<a id="my-mentors" class="anchor" href="#my-mentors" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Mentor(s):</h2>
-<a href="Mentor%20page.html">Cecelia Jones</a><br>
+<h2>My Mentor(s):</h2>
+<a href="#C.J. Page">Cecelia Jones</a><br>
 </div>
 
 <div id="education">
@@ -165,182 +407,824 @@ Education: <br>
 Lake Forest High School
 </div>
 
+<!-- Find Mentor button-->
+<a href="data:image/jpeg;base64,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" 
+id="choices" class="myButton">FIND MENTOR</a>
 
 
-<p><a id="choices">FIND MENTOR</a></p>
 
-
-
+<!--Footer-->
 <div id="footer">
 2015 @ Mentorship Match-Up <br>
 Chicago, IL
 </div>
 
-<p></p>
-</div> &lt;!--wrapper--&gt;
-</div> &lt;!--page tag --&gt;
 
+</div> <!--wrapper-->
+</div> <!--page tag -->
 
+<!-- 				END OF PAGE 				-->
 
-<div id="C.J. Page">
+<div data-role="page" id="C.J. Page">
 <div id="wrapper">
 
 <div id="header">
-<h1>
-<a id="mentorship-match-up-2" class="anchor" href="#mentorship-match-up-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mentorship Match-Up</h1>
+<h1>Mentorship Match-Up</h1>
 </div>
 
+<script>
+function goBack() {
+	window.history.back();
+	}
+</script>
 
-
-
-
+<!--Logout Bar-->
 <div id="nav">
-<hr size="1px" color="black">
+<hr 
+size=1px
+color="black">
 
 <div id="back">
- Back 
-</div>
+<a onClick="goBack();"> Back </a>
+</div><!--back-->
 
-<a href="Login%20Page.html">Log Out</a>
-<hr size="1px" color="black">
-</div>
+<a href="Login Page">Log Out</a>
+<hr 
+size=1px
+color="black">
+</div><!--nav-->
 
-
+<!--Profile pic-->
 <div id="aside">
-<img src="http://hobokenchamber.com/wp-content/uploads/2012/03/WIB.jpg" width="200" height="200px" border="5px">
+<img src="http://hobokenchamber.com/wp-content/uploads/2012/03/WIB.jpg" 
+width=200 px
+height=200px
+border=5px>
 Mentor
-</div>
+</div><!--aside-->
 
-
+<!-- Middle section (main body) -->
 <div id="section">
 
-<h1>
-<a id="cecelia-jones" class="anchor" href="#cecelia-jones" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cecelia Jones</h1>
+<h1>Cecelia Jones</h1>
 <hr>
 
 Area of Expertise: <br>
 
-
+<textarea rows="4" cols="50" readonly>
 Mobile App Development
-
+</textarea>
 <br>
 
 Current Career:<br>
 
-
+<textarea rows="4" cols="50" readonly>
 Head of Engineering
-
+</textarea>
 <br>
 
 Experience: <br>
-
+<textarea rows="4" cols="50" readonly>
 Microsoft (2 years)
 Groupon (current)
-
+</textarea>
 </div>
 
 
-
+<!--List of mentees-->
 <div id="friends">
-<h2>
-<a id="my-mentees" class="anchor" href="#my-mentees" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Mentee(s):</h2>
-<a href="Mentorship%20Match-Up.html">Jimmy Johnson</a><br>
+<h2>My Mentee(s):</h2>
+<a href="#J.J. Page">Jimmy Johnson</a><br>
 </div>
+
 
 <div id="education">
-<h3>
-<a id="education" class="anchor" href="#education" aria-hidden="true"><span class="octicon octicon-link"></span></a>Education:</h3>
+<h3>Education:</h3>
 Bachelor's of Science from college <br>
 Doctorate of Computer Science from college <br>
 </div>
 
-
-
+<!--Footer-->
 <div id="footer">
 2015 @ Mentorship Match-Up <br>
 Chicago, IL
 </div>
 
-<p></p>
-</div> &lt;!-- wrapper --&gt;
-</div> &lt;!--page end --&gt;
+</div> <!-- wrapper -->
+</div> <!--page end -->
 
+<!--					END OF PAGE					-->
 
-
-<div id="Mentee/Mentor Page">
+<div data-role="page" id="Mentee/Mentor Page">
 <div id="wrapper">
 
 <div id="header">
-<h1>
-<a id="mentorship-match-up-3" class="anchor" href="#mentorship-match-up-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mentorship Match-Up</h1>
+<h1>Mentorship Match-Up</h1>
 </div>
 
-<h3>
-<a id="are-you-a--" class="anchor" href="#are-you-a--" aria-hidden="true"><span class="octicon octicon-link"></span></a>Are you a: <br> </h3>
+<h3>Are you a: <br> </h3>
 
 <div id="choicesbuttons">
-<a href="menteeSignUp.html">Mentee?</a>
+<a href="Mentee Sign-Up Page"  class="myButton">Mentee?</a>
 
 <h3>
-<a id="or" class="anchor" href="#or" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 Or
 </h3>
 
-<a href="mentorSignUp.html">Mentor?</a>
+<a href="Mentor Sign-Up Page" class="myButton">Mentor?</a>
 
 <h3>
-<a id="or-1" class="anchor" href="#or-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 Or
 </h3>
 
-<a href="Group%20Profile%20Sample.html">Group?</a>
+<a href="Group Profile Sample.html"  class="myButton">Group?</a>
 
 </div>
 
 
-
+<!--Footer-->
 <div id="footer">
 2015 @ Mentorship Match-Up <br>
 Chicago, IL
 </div>
 
-<p></p>
-</div>&lt;!--wrapper--&gt;
-</div> &lt;!-- page end --&gt;
+</div><!--wrapper-->
+</div> <!-- page end -->
+
+<!-- 				END OF PAGE 			-->
+
+<div data-role="page" id="Mentee Sign-Up Page">
+<script>
+(function(global) {
+  "use strict";
+
+  var inNodeJS = false;
+  if (typeof module !== 'undefined' && module.exports) {
+    inNodeJS = true;
+    var request = require('request');
+  }
+
+  var supportsCORS = false;
+  var inLegacyIE = false;
+  try {
+    var testXHR = new XMLHttpRequest();
+    if (typeof testXHR.withCredentials !== 'undefined') {
+      supportsCORS = true;
+    } else {
+      if ("XDomainRequest" in window) {
+        supportsCORS = true;
+        inLegacyIE = true;
+      }
+    }
+  } catch (e) { }
+
+  // Create a simple indexOf function for support
+  // of older browsers.  Uses native indexOf if 
+  // available.  Code similar to underscores.
+  // By making a separate function, instead of adding
+  // to the prototype, we will not break bad for loops
+  // in older browsers
+  var indexOfProto = Array.prototype.indexOf;
+  var ttIndexOf = function(array, item) {
+    var i = 0, l = array.length;
+    
+    if (indexOfProto && array.indexOf === indexOfProto) return array.indexOf(item);
+    for (; i < l; i++) if (array[i] === item) return i;
+    return -1;
+  };
+  
+  /*
+    Initialize with Tabletop.init( { key: '0AjAPaAU9MeLFdHUxTlJiVVRYNGRJQnRmSnQwTlpoUXc' } )
+      OR!
+    Initialize with Tabletop.init( { key: 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AjAPaAU9MeLFdHUxTlJiVVRYNGRJQnRmSnQwTlpoUXc&output=html&widget=true' } )
+      OR!
+    Initialize with Tabletop.init('0AjAPaAU9MeLFdHUxTlJiVVRYNGRJQnRmSnQwTlpoUXc')
+  */
+
+  var Tabletop = function(options) {
+    // Make sure Tabletop is being used as a constructor no matter what.
+    if(!this || !(this instanceof Tabletop)) {
+      return new Tabletop(options);
+    }
+    
+    if(typeof(options) === 'string') {
+      options = { key : options };
+    }
+
+    this.callback = options.callback;
+    this.wanted = options.wanted || [];
+    this.key = options.key;
+    this.simpleSheet = !!options.simpleSheet;
+    this.parseNumbers = !!options.parseNumbers;
+    this.wait = !!options.wait;
+    this.reverse = !!options.reverse;
+    this.postProcess = options.postProcess;
+    this.debug = !!options.debug;
+    this.query = options.query || '';
+    this.orderby = options.orderby;
+    this.endpoint = options.endpoint || "https://spreadsheets.google.com";
+    this.singleton = !!options.singleton;
+    this.simple_url = !!options.simple_url;
+    this.callbackContext = options.callbackContext;
+    // Default to on, unless there's a proxy, in which case it's default off
+    this.prettyColumnNames = typeof(options.prettyColumnNames) == 'undefined' ? !options.proxy : options.prettyColumnNames
+    
+    if(typeof(options.proxy) !== 'undefined') {
+      // Remove trailing slash, it will break the app
+      this.endpoint = options.proxy.replace(/\/$/,'');
+      this.simple_url = true;
+      this.singleton = true;
+      // Let's only use CORS (straight JSON request) when
+      // fetching straight from Google
+      supportsCORS = false;
+    }
+    
+    this.parameterize = options.parameterize || false;
+    
+    if(this.singleton) {
+      if(typeof(Tabletop.singleton) !== 'undefined') {
+        this.log("WARNING! Tabletop singleton already defined");
+      }
+      Tabletop.singleton = this;
+    }
+    
+    /* Be friendly about what you accept */
+    if(/key=/.test(this.key)) {
+      this.log("You passed an old Google Docs url as the key! Attempting to parse.");
+      this.key = this.key.match("key=(.*?)(&|#|$)")[1];
+    }
+
+    if(/pubhtml/.test(this.key)) {
+      this.log("You passed a new Google Spreadsheets url as the key! Attempting to parse.");
+      this.key = this.key.match("d\\/(.*?)\\/pubhtml")[1];
+    }
+
+    if(!this.key) {
+      this.log("You need to pass Tabletop a key!");
+      return;
+    }
+
+    this.log("Initializing with key " + this.key);
+
+    this.models = {};
+    this.model_names = [];
+
+    this.base_json_path = "/feeds/worksheets/" + this.key + "/public/basic?alt=";
+
+    if (inNodeJS || supportsCORS) {
+      this.base_json_path += 'json';
+    } else {
+      this.base_json_path += 'json-in-script';
+    }
+    
+    if(!this.wait) {
+      this.fetch();
+    }
+  };
+
+  // A global storage for callbacks.
+  Tabletop.callbacks = {};
+
+  // Backwards compatibility.
+  Tabletop.init = function(options) {
+    return new Tabletop(options);
+  };
+
+  Tabletop.sheets = function() {
+    this.log("Times have changed! You'll want to use var tabletop = Tabletop.init(...); tabletop.sheets(...); instead of Tabletop.sheets(...)");
+  };
+
+  Tabletop.prototype = {
+
+    fetch: function(callback) {
+      if(typeof(callback) !== "undefined") {
+        this.callback = callback;
+      }
+      this.requestData(this.base_json_path, this.loadSheets);
+    },
+    
+    /*
+      This will call the environment appropriate request method.
+      
+      In browser it will use JSON-P, in node it will use request()
+    */
+    requestData: function(path, callback) {
+      if (inNodeJS) {
+        this.serverSideFetch(path, callback);
+      } else {
+        //CORS only works in IE8/9 across the same protocol
+        //You must have your server on HTTPS to talk to Google, or it'll fall back on injection
+        var protocol = this.endpoint.split("//").shift() || "http";
+        if (supportsCORS && (!inLegacyIE || protocol === location.protocol)) {
+          this.xhrFetch(path, callback);
+        } else {
+          this.injectScript(path, callback);
+        }
+      }
+    },
+
+    /*
+      Use Cross-Origin XMLHttpRequest to get the data in browsers that support it.
+    */
+    xhrFetch: function(path, callback) {
+      //support IE8's separate cross-domain object
+      var xhr = inLegacyIE ? new XDomainRequest() : new XMLHttpRequest();
+      xhr.open("GET", this.endpoint + path);
+      var self = this;
+      xhr.onload = function() {
+        try {
+          var json = JSON.parse(xhr.responseText);
+        } catch (e) {
+          console.error(e);
+        }
+        callback.call(self, json);
+      };
+      xhr.send();
+    },
+    
+    /*
+      Insert the URL into the page as a script tag. Once it's loaded the spreadsheet data
+      it triggers the callback. This helps you avoid cross-domain errors
+      http://code.google.com/apis/gdata/samples/spreadsheet_sample.html
+
+      Let's be plain-Jane and not use jQuery or anything.
+    */
+    injectScript: function(path, callback) {
+      var script = document.createElement('script');
+      var callbackName;
+      
+      if(this.singleton) {
+        if(callback === this.loadSheets) {
+          callbackName = 'Tabletop.singleton.loadSheets';
+        } else if (callback === this.loadSheet) {
+          callbackName = 'Tabletop.singleton.loadSheet';
+        }
+      } else {
+        var self = this;
+        callbackName = 'tt' + (+new Date()) + (Math.floor(Math.random()*100000));
+        // Create a temp callback which will get removed once it has executed,
+        // this allows multiple instances of Tabletop to coexist.
+        Tabletop.callbacks[ callbackName ] = function () {
+          var args = Array.prototype.slice.call( arguments, 0 );
+          callback.apply(self, args);
+          script.parentNode.removeChild(script);
+          delete Tabletop.callbacks[callbackName];
+        };
+        callbackName = 'Tabletop.callbacks.' + callbackName;
+      }
+      
+      var url = path + "&callback=" + callbackName;
+      
+      if(this.simple_url) {
+        // We've gone down a rabbit hole of passing injectScript the path, so let's
+        // just pull the sheet_id out of the path like the least efficient worker bees
+        if(path.indexOf("/list/") !== -1) {
+          script.src = this.endpoint + "/" + this.key + "-" + path.split("/")[4];
+        } else {
+          script.src = this.endpoint + "/" + this.key;
+        }
+      } else {
+        script.src = this.endpoint + url;
+      }
+      
+      if (this.parameterize) {
+        script.src = this.parameterize + encodeURIComponent(script.src);
+      }
+      
+      document.getElementsByTagName('script')[0].parentNode.appendChild(script);
+    },
+    
+    /* 
+      This will only run if tabletop is being run in node.js
+    */
+    serverSideFetch: function(path, callback) {
+      var self = this
+      request({url: this.endpoint + path, json: true}, function(err, resp, body) {
+        if (err) {
+          return console.error(err);
+        }
+        callback.call(self, body);
+      });
+    },
+
+    /* 
+      Is this a sheet you want to pull?
+      If { wanted: ["Sheet1"] } has been specified, only Sheet1 is imported
+      Pulls all sheets if none are specified
+    */
+    isWanted: function(sheetName) {
+      if(this.wanted.length === 0) {
+        return true;
+      } else {
+        return (ttIndexOf(this.wanted, sheetName) !== -1);
+      }
+    },
+    
+    /*
+      What gets send to the callback
+      if simpleSheet === true, then don't return an array of Tabletop.this.models,
+      only return the first one's elements
+    */
+    data: function() {
+      // If the instance is being queried before the data's been fetched
+      // then return undefined.
+      if(this.model_names.length === 0) {
+        return undefined;
+      }
+      if(this.simpleSheet) {
+        if(this.model_names.length > 1 && this.debug) {
+          this.log("WARNING You have more than one sheet but are using simple sheet mode! Don't blame me when something goes wrong.");
+        }
+        return this.models[ this.model_names[0] ].all();
+      } else {
+        return this.models;
+      }
+    },
+
+    /*
+      Add another sheet to the wanted list
+    */
+    addWanted: function(sheet) {
+      if(ttIndexOf(this.wanted, sheet) === -1) {
+        this.wanted.push(sheet);
+      }
+    },
+    
+    /*
+      Load all worksheets of the spreadsheet, turning each into a Tabletop Model.
+      Need to use injectScript because the worksheet view that you're working from
+      doesn't actually include the data. The list-based feed (/feeds/list/key..) does, though.
+      Calls back to loadSheet in order to get the real work done.
+
+      Used as a callback for the worksheet-based JSON
+    */
+    loadSheets: function(data) {
+      var i, ilen;
+      var toLoad = [];
+      this.foundSheetNames = [];
+
+      for(i = 0, ilen = data.feed.entry.length; i < ilen ; i++) {
+        this.foundSheetNames.push(data.feed.entry[i].title.$t);
+        // Only pull in desired sheets to reduce loading
+        if( this.isWanted(data.feed.entry[i].content.$t) ) {
+          var linkIdx = data.feed.entry[i].link.length-1;
+          var sheet_id = data.feed.entry[i].link[linkIdx].href.split('/').pop();
+          var json_path = "/feeds/list/" + this.key + "/" + sheet_id + "/public/values?alt="
+          if (inNodeJS || supportsCORS) {
+            json_path += 'json';
+          } else {
+            json_path += 'json-in-script';
+          }
+          if(this.query) {
+            json_path += "&sq=" + this.query;
+          }
+          if(this.orderby) {
+            json_path += "&orderby=column:" + this.orderby.toLowerCase();
+          }
+          if(this.reverse) {
+            json_path += "&reverse=true";
+          }
+          toLoad.push(json_path);
+        }
+      }
+
+      this.sheetsToLoad = toLoad.length;
+      for(i = 0, ilen = toLoad.length; i < ilen; i++) {
+        this.requestData(toLoad[i], this.loadSheet);
+      }
+    },
+
+    /*
+      Access layer for the this.models
+      .sheets() gets you all of the sheets
+      .sheets('Sheet1') gets you the sheet named Sheet1
+    */
+    sheets: function(sheetName) {
+      if(typeof sheetName === "undefined") {
+        return this.models;
+      } else {
+        if(typeof(this.models[ sheetName ]) === "undefined") {
+          // alert( "Can't find " + sheetName );
+          return;
+        } else {
+          return this.models[ sheetName ];
+        }
+      }
+    },
+
+    sheetReady: function(model) {
+      this.models[ model.name ] = model;
+      if(ttIndexOf(this.model_names, model.name) === -1) {
+        this.model_names.push(model.name);
+      }
+
+      this.sheetsToLoad--;
+      if(this.sheetsToLoad === 0)
+        this.doCallback();
+    },
+    
+    /*
+      Parse a single list-based worksheet, turning it into a Tabletop Model
+
+      Used as a callback for the list-based JSON
+    */
+    loadSheet: function(data) {
+      var that = this;
+      var model = new Tabletop.Model( { data: data, 
+                                        parseNumbers: this.parseNumbers,
+                                        postProcess: this.postProcess,
+                                        tabletop: this,
+                                        prettyColumnNames: this.prettyColumnNames,
+                                        onReady: function() {
+                                          that.sheetReady(this);
+                                        } } );
+    },
+
+    /*
+      Execute the callback upon loading! Rely on this.data() because you might
+        only request certain pieces of data (i.e. simpleSheet mode)
+      Tests this.sheetsToLoad just in case a race condition happens to show up
+    */
+    doCallback: function() {
+      if(this.sheetsToLoad === 0) {
+        this.callback.apply(this.callbackContext || this, [this.data(), this]);
+      }
+    },
+
+    log: function(msg) {
+      if(this.debug) {
+        if(typeof console !== "undefined" && typeof console.log !== "undefined") {
+          Function.prototype.apply.apply(console.log, [console, arguments]);
+        }
+      }
+    }
+
+  };
+
+  /*
+    Tabletop.Model stores the attribute names and parses the worksheet data
+      to turn it into something worthwhile
+
+    Options should be in the format { data: XXX }, with XXX being the list-based worksheet
+  */
+  Tabletop.Model = function(options) {
+    var i, j, ilen, jlen;
+    this.column_names = [];
+    this.name = options.data.feed.title.$t;
+    this.tabletop = options.tabletop;
+    this.elements = [];
+    this.onReady = options.onReady;
+    this.raw = options.data; // A copy of the sheet's raw data, for accessing minutiae
+
+    if(typeof(options.data.feed.entry) === 'undefined') {
+      options.tabletop.log("Missing data for " + this.name + ", make sure you didn't forget column headers");
+      this.original_columns = [];
+      this.elements = [];
+      this.onReady.call(this);
+      return;
+    }
+    
+    for(var key in options.data.feed.entry[0]){
+      if(/^gsx/.test(key))
+        this.column_names.push( key.replace("gsx$","") );
+    }
+
+    this.original_columns = this.column_names;
+    
+    for(i = 0, ilen =  options.data.feed.entry.length ; i < ilen; i++) {
+      var source = options.data.feed.entry[i];
+      var element = {};
+      for(var j = 0, jlen = this.column_names.length; j < jlen ; j++) {
+        var cell = source[ "gsx$" + this.column_names[j] ];
+        if (typeof(cell) !== 'undefined') {
+          if(options.parseNumbers && cell.$t !== '' && !isNaN(cell.$t))
+            element[ this.column_names[j] ] = +cell.$t;
+          else
+            element[ this.column_names[j] ] = cell.$t;
+        } else {
+            element[ this.column_names[j] ] = '';
+        }
+      }
+      if(element.rowNumber === undefined)
+        element.rowNumber = i + 1;
+      if( options.postProcess )
+        options.postProcess(element);
+      this.elements.push(element);
+    }
+    
+    if(options.prettyColumnNames)
+      this.fetchPrettyColumns();
+    else
+      this.onReady.call(this);
+  };
+
+  Tabletop.Model.prototype = {
+    /*
+      Returns all of the elements (rows) of the worksheet as objects
+    */
+    all: function() {
+      return this.elements;
+    },
+    
+    fetchPrettyColumns: function() {
+      if(!this.raw.feed.link[3])
+        return this.ready();
+      var cellurl = this.raw.feed.link[3].href.replace('/feeds/list/', '/feeds/cells/').replace('https://spreadsheets.google.com', '');
+      var that = this;
+      this.tabletop.requestData(cellurl, function(data) {
+        that.loadPrettyColumns(data)
+      });
+    },
+    
+    ready: function() {
+      this.onReady.call(this);
+    },
+    
+    /*
+     * Store column names as an object
+     * with keys of Google-formatted "columnName"
+     * and values of human-readable "Column name"
+     */
+    loadPrettyColumns: function(data) {
+      var pretty_columns = {};
+
+      var column_names = this.column_names;
+
+      var i = 0;
+      var l = column_names.length;
+
+      for (; i < l; i++) {
+        if (typeof data.feed.entry[i].content.$t !== 'undefined') {
+          pretty_columns[column_names[i]] = data.feed.entry[i].content.$t;
+        } else {
+          pretty_columns[column_names[i]] = column_names[i];
+        }
+      }
+
+      this.pretty_columns = pretty_columns;
+
+      this.prettifyElements();
+      this.ready();
+    },
+    
+    /*
+     * Go through each row, substitutiting
+     * Google-formatted "columnName"
+     * with human-readable "Column name"
+     */
+    prettifyElements: function() {
+      var pretty_elements = [],
+          ordered_pretty_names = [],
+          i, j, ilen, jlen;
+
+      var ordered_pretty_names;
+      for(j = 0, jlen = this.column_names.length; j < jlen ; j++) {
+        ordered_pretty_names.push(this.pretty_columns[this.column_names[j]]);
+      }
+
+      for(i = 0, ilen = this.elements.length; i < ilen; i++) {
+        var new_element = {};
+        for(j = 0, jlen = this.column_names.length; j < jlen ; j++) {
+          var new_column_name = this.pretty_columns[this.column_names[j]];
+          new_element[new_column_name] = this.elements[i][this.column_names[j]];
+        }
+        pretty_elements.push(new_element);
+      }
+      this.elements = pretty_elements;
+      this.column_names = ordered_pretty_names;
+    },
+
+    /*
+      Return the elements as an array of arrays, instead of an array of objects
+    */
+    toArray: function() {
+      var array = [],
+          i, j, ilen, jlen;
+      for(i = 0, ilen = this.elements.length; i < ilen; i++) {
+        var row = [];
+        for(j = 0, jlen = this.column_names.length; j < jlen ; j++) {
+          row.push( this.elements[i][ this.column_names[j] ] );
+        }
+        array.push(row);
+      }
+      return array;
+    }
+  };
+
+  if(inNodeJS) {
+    module.exports = Tabletop;
+  } else if (typeof define === 'function' && define.amd) {
+    define(function () {
+        return Tabletop;
+    });
+  } else {
+    global.Tabletop = Tabletop;
+  }
+
+})(this);
+</script> <!-- js for tabletop.js -->
+<script>
+window.onload = function() { init() };
+
+  var mentee_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Fzl9HRP99j-y0-gErpfyg-aydvazZZFwmAXWkUDuxpQ/pubhtml';
+	var mentor_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1qPY0iwZWHokKvEaJshfQRMC1CDprCqLvOlVyosY7GF4/pubhtml';
+  function init() {
+    Tabletop.init( { key: mentee_spreadsheet_url,
+                     callback: matchMentee,
+                     simpleSheet: true } )// ending for tabletop.init
+                     
+    Tabletop.init( { key: mentor_spreadsheet_url,
+                     callback: matchMentor,
+                     simpleSheet: true } )// ending for tabletop.init              
+  }//ending for function init
 
 
+var menteeFields = [];
+var menteeName = [];
+var menteeGoal = [];
+function matchMentee(dataMentee) {
+					       //matchMentor is for mentee spreadsheet
+	for(var i = 0;i<dataMentee.length;i++){
+		var menteeF = dataMentee[i].Field
+		menteeFields.push(menteeF);
+		var menteeN = dataMentee[i].Name
+		menteeName.push(menteeN);
+		var menteeG = dataMentee[i].Goals
+		menteeGoal.push(menteeG);
+	}  //end for loop  
+	} // end for function 
 
-<div id="Mentee Sign-Up Page">
- 
- 
+var mentorFields = [];
+var mentorName = [];
+function matchMentor(dataMentor){         //matchMentor is for mentor spreadsheet
+	for(var i = 0;i<dataMentor.length;i++){
+		var mentorF = dataMentor[i].Expertise
+		mentorFields.push(mentorF);
+		var mentorN = dataMentor[i].Name
+		mentorName.push(mentorN);
+		
+		
+	}  //end for loop 
+	} // end for function 
+	
+ /*function loop() {
+	for(var i = 0;i<menteeFields.length;i++){
+		for(var j = 0;j<mentorFields.length;i++){ 
+		if(menteeFields[i] == mentorFields[j]){
+		alert(menteeName[i] + " & " + mentorName[j]);
+		} // end for if conditional
+		} //end for j loop
+		} //end for i loop
+		} // end for function      this is for group option and gets activated when button is clicked */
+	
+function oneP() {
+Tabletop.init( { key: mentee_spreadsheet_url,
+                     callback: matchMentee,
+                     simpleSheet: true } )// ending for tabletop.init
+	for(var j=0;j<mentorFields.length;j++){
+		if(menteeFields[menteeFields.length-1] == mentorFields[j]) {
+		document.getElementById("mentor").innerHTML += mentorName[j];
+		document.getElementById("mentor").innerHTML += " : ";
+		document.getElementById("mentor").innerHTML += mentorFields[j];
+		document.getElementById("mentor").innerHTML += "<p> </p>";
+				} // end for if conditional
+		} // end for loop 
+		} // end for function 
+		
+ function display() {
+	document.getElementById("name").innerHTML +=menteeName[menteeName.length-1];
+	 document.getElementById("fields").innerHTML +=menteeFields[menteeFields.length-1];
+	 document.getElementById("goals").innerHTML += menteeGoal[menteeGoal.length-1];
+	} 
+
+			
+</script> <!-- js for findfunction -->
 <div id="wrapper">
 
-<div id="header">
-<h1>
-<a id="-mentorship-match-up-" class="anchor" href="#-mentorship-match-up-" aria-hidden="true"><span class="octicon octicon-link"></span></a> Mentorship Match-Up </h1>
+<div id="header" >
+<h1> Mentorship Match-Up </h1>
 </div>
 
-<div id="form">
-Loading...
+<div id = "form">
+<iframe src="https://docs.google.com/forms/d/14Omp5KOG3vYopJqy9670JQ8Nso1m2rn8w04zqMhyV9c/viewform?embedded=true#start=embed" width="900" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div> 
  
+ <a href = "PeopleProfile Page" > Click here to view your profile </a>
 
-<p><a href="peopleprofile.html"> Click here to view your profile </a></p>
-
-<div id="footer">
+<div id="footer" >
 2015 @ Mentorship Match-Up 
 <br>
 Chicago, IL
-</div>
+</div><!--footer-->
 
  
-</div>
-</div> 
+</div><!--wrapper-->
+</div> <!-- page ends -->
 
+<!-- 				END OF PAGE 			-->
 
-
-<div id="Mentor Sign-Up Page">
-
+<div data-role="page" id="Mentor Sign-Up Page">
+<style>
 body {
 background-color:#94C160;
 }
@@ -352,11 +1236,11 @@ background-color:#94C160;
     width: 97.4%;
 }
 #wrapper {
-    height: 100%;
-    width: 100%;
-    min-height:100%;
-    position:absolute;
-    overflow-y: hidden;
+	height: 100%;
+	width: 100%;
+	min-height:100%;
+	position:absolute;
+	overflow-y: hidden;
 }
 #footer {
     background-color:#AA7239;
@@ -370,95 +1254,98 @@ background-color:#94C160;
     width: 97.4%;
 }
 
-
+</style>
 
 <div id="wrapper">
-<div id="header">
-<h1>
-<a id="-mentor-sign-up-" class="anchor" href="#-mentor-sign-up-" aria-hidden="true"><span class="octicon octicon-link"></span></a> Mentor Sign-Up </h1>
+<div id="header" >
+<h1> Mentor Sign-Up </h1>
 </div>
-
-Loading...
-
-<div id="footer">
+<iframe src="https://docs.google.com/forms/d/1nszaR_aX3-IarPr1PfxopOUdrOh1acVnrBkIeAquLrU/viewform?embedded=true" width="900" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<div id="footer" >
 2015 @ Mentorship Match-Up 
 <br>
 Chicago, IL
 </div>
-
-<p></p>
 </div>
-</div> &lt;!-- page ends --&gt;
+</div> <!-- page ends -->
 
+<!-- 				END OF PAGE 			-->
 
-
-<div id="PeopleProfile Page">
- display 
-Find Mentor 
+<div data-role="page" id="PeopleProfile Page">
+ <button onclick="display()">display</button> 
+<button onclick="oneP()">Find Mentor</button> 
  
 <div id="wrapper">
-<div id="header">
-<h1>
-<a id="mentorship-match-up-4" class="anchor" href="#mentorship-match-up-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mentorship Match-Up</h1>
-</div>  
+<div id= "header">
+<h1>Mentorship Match-Up</h1>
+</div>  <!-- closing for header -->
 
 <div id="nav">
 
-<hr size="1px" color="black">
+<hr 
+size=1px
+color="black">
 
-<a href="Login%20Page.html">Log Out</a>
-<hr size="1px" color="black">
-</div>  
+<a href="Login Page">Log Out</a>
+<hr 
+size=1px
+color="black">
+</div>  <!-- closing for nav -->
 
 <div id="aside">
-<img src="https://pixabay.com/static/uploads/photo/2014/04/02/10/40/person-304210_640.png" width="200" height="200px" border="5px&lt;br">
+<img src="https://pixabay.com/static/uploads/photo/2014/04/02/10/40/person-304210_640.png" 
+width=200 px
+height=200px
+border=5px<br>
 Mentee
-</div>  
+</div>  <!-- closing for aside -->
 
 
-<div id="section">
-<div id="name"> </div> 
+<div id = "section">
+<div id = "name"> </div> <!-- closing for name -->
 <hr>
 
 Fields interested in: <br>
-<div id="fields">
-</div> 
+<div id = "fields">
+</div> <!-- closing for fields -->
 <br>
 Goals:
-<div id="goals"> </div>
-
-<p></p>
-</div> &lt;!-- closing for section --&gt;
+<div id = "goals"> </div>
+</div> <!-- closing for section -->
 
 <div id="friends">
-<h2>
-<a id="--suggested-mentors" class="anchor" href="#--suggested-mentors" aria-hidden="true"><span class="octicon octicon-link"></span></a>  Suggested Mentor(s):</h2>
-<div id="mentor">
-<a href="Mentor%20page.html">Cecelia Jones: <br>
-Expert<br></a>
-</div>
+<h2>  Suggested Mentor(s):</h2>
+<div id = "mentor">
+<a href="C.J. Page">Cecelia Jones: <br>
+Expert<br></a></div>
+</div> <!-- closing for friends -->
 
-<p></p>
-</div> &lt;!-- closing for friends --&gt;
-
-<p></p>
-<div id="footer">
+<div id = "footer">
 2015 @ Mentorship Match-Up
 <br>
 Chicago, IL
 <br>
-<a href="menteeSignUp.html"> Click here to make a new profile </a>
-</div> &lt;!-- closing for footer --&gt;
-</div> &lt;!-- page ends --&gt;</div>
+<a href = "PeopleProfile Page" > Click here to make a new profile </a>
+</div> <!-- closing for footer -->
+</div> <!-- page ends -->
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/thingtwin1/Mentorship-Match-Up">Mentorship-match-up</a> is maintained by <a href="https://github.com/thingtwin1">thingtwin1</a>.</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
 
-    </section>
 
-  
-  </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
